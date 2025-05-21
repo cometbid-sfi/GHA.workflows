@@ -1,0 +1,15 @@
+name: Debug Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug Workflow
+        uses: hmarr/debug-action@v3
+         
